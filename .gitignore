@@ -1,0 +1,10 @@
+## OS generated files to ignore
+
+*~
+*.tmp
+*.Trashes
+.DS_Store
+Thumbs.db
+
+# A handy place to put stuff that git should ignore:
+/ignore/
