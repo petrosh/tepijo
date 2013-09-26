@@ -3,14 +3,51 @@
 		<meta charset="utf-8">
 		<title>tepijo</title>
 		<link rel="stylesheet" href="css/normalize.css" />
-		<script src="js/mousetrap.min.js"></script>
+		<style>body{margin:50px;}</style>
+		<script src="lib/jquery/jquery-1.10.2.min.js"></script>
+		<script src="lib/mousetrap/mousetrap.min.js"></script>
+		<script src="lib/storejs/store+json2.min.js"></script>
 		<script>
+
 			// single keys
 			Mousetrap.bind('4', function() { alert('4'); });
 			Mousetrap.bind('x', function() { alert('x'); }, 'keyup');
+
+			// localstore
+			store.get('unsetValue');
+
+			var all = store.getAll();
+
+			if (all.tepijo == 'true') {
+				alert('ok');
+			} else {
+				localInit();
+			}
+
+			function localInit() {
+				store.set('tepijo', 'true');
+				alert('stored');
+			}
+			
+			function clearStore() {
+				store.clear();
+			}
+
 		</script>
 	</head>
 	<body>
-		
+		<input id="tepijo" type="text" name="tepijo" />
+		<ul>
+			<li>
+				<a href="#" id="bind-site" class="command">Bind a site</a> (options)
+			</li>
+			<li>
+				<a href="#" id="bind-string" class="command">Bind a string</a> (append)
+			</li>
+			<li>
+				<a href="#" id="clear-store" class="command">Clear store</a>
+			</li>
+		</ul>
+		<div id="console"></div>
 	</body>
 </html>
