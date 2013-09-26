@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 	<head>
-	    <meta charset="utf-8">
-	    <title>Mousetrap Tests</title>
-	    <link rel="stylesheet" href="css/normalize.css" />
+		<meta charset="utf-8">
+		<title>tepijo</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<script src="js/mousetrap.min.js"></script>
+		<script>
+			// single keys
+			Mousetrap.bind('4', function() { alert('4'); });
+			Mousetrap.bind('x', function() { alert('x'); }, 'keyup');
+		</script>
 	</head>
 	<body>
-	
+		
 	</body>
 </html>
