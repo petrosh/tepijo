@@ -1,0 +1,6 @@
+body{
+	margin:50px;
+}
+
+a:link, a:visited { color: blue; }
+a:hover, a:active { color: red; }
