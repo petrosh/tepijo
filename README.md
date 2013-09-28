@@ -11,3 +11,16 @@ search panel for typo-maniacs
 \__/\___/ .___/_/_/ /\____/ 
        /_/     /___/  PRESS'N'SEARCH
 ```
+
+*Init*  
+
+- Check localStorage  
+- Check profile  
+- Load binds  
+
+*Run*
+
+- Add/manage binds
+- Settings profile/sync
+- Tips
+- profiles presents

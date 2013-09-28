@@ -5,6 +5,7 @@
 *.Trashes
 .DS_Store
 Thumbs.db
+*.tmproj
 
-# A handy place to put stuff that git should ignore:
-/ignore/
+## A handy place to put stuff that git should ignore:
+# /ignore/
