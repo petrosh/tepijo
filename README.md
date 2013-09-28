@@ -1,7 +1,7 @@
 tepijo
 ======
 
-search panel for typo-maniacs
+search panel for keyboard-maniacs
 
 ```
    __             _   _     
